@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover" />
   <title>Zozi's Subbacultcha</title>
   <style>
     :root { --bar-h: 44px; }
@@ -30,13 +30,25 @@
       outline: none;
     }
     .bar .status { font-size: 12px; opacity: .8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .frame-wrap {
-      position: fixed;
-      top: var(--bar-h);
-      left: 0; right: 0; bottom: 0;
-      background: #222;
-    }
-    iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+		.frame-wrap {
+			position: fixed;
+			top: var(--bar-h);
+			left: 0; right: 0; bottom: 0;
+			background: #222;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			box-sizing: border-box;
+		}
+		iframe {
+			max-width: 100vw;
+			width: 100%;
+			height: 100%;
+			border: 0;
+			background: #fff;
+			display: block;
+			margin: 0 auto;
+		}
   </style>
 </head>
 <body>
